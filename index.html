@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lucidity</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+</head>
+<body>
+
+  <!-- HORNÍ MENU (Fixní nahoře) -->
+  <header>
+    <!-- Logo vlevo, přesahující dolů pod čáru -->
+    <div class="logo-overflow">
+      <a href="#" onclick="showSection('home', this)">
+        <img src="assets/logo.png" alt="Lucidity Logo" class="logo-img">
+      </a>
+    </div>
+
+    <!-- Tlačítka vpravo -->
+    <nav>
+      <a href="#" class="nav-btn active" onclick="showSection('home', this)">Domů</a>
+      
+      <!-- Rozevírací menu pro pravidla -->
+      <div class="dropdown" id="rules-dropdown">
+        <button class="dropbtn nav-btn" onclick="toggleDropdown(event)">Pravidla ▼</button>
+        <div class="dropdown-content">
+          <a href="#" onclick="showRuleSection('rules-community', event)">Komunitní pravidla</a>
+          <a href="#" onclick="showRuleSection('rules-rp', event)">Roleplay pravidla</a>
+          <a href="#" onclick="showRuleSection('rules-illegal', event)">Ilegální pravidla</a>
+        </div>
+      </div>
+
+      <a href="#" class="nav-btn" onclick="showSection('faq', this)">FAQ</a>
+      <a href="#" class="nav-btn" onclick="showSection('support', this)">Support</a>
+    </nav>
+  </header>
+
+  <!-- HLAVNÍ OBSAH -->
+  <main>
+    
+    <!-- DOMOVSKÁ STRÁNKA -->
+    <div id="home" class="page-section active">
+      
+      <!-- Uvítací box přes celou šířku -->
+      <div class="box welcome-full">
+        <h2>Vítejte na Lucidity</h2>
+        <p>Lucidity je komunitní roleplay server. Zde najdeš vše potřebné pro hraní a aktuality z dění.</p>
+      </div>
+
+      <!-- MŘÍŽKA OKEN (30% vlevo, 70% vpravo) -->
+      <div class="grid-layout">
+        
+        <!-- Levý sloupec (~30%): Stav serveru + Novinky -->
+        <div class="column-left">
+          
+          <!-- Nižší okno: Stav serveru (Cfx.re API) -->
+          <div class="box box-server" id="server-box" data-cfx="SEM_VLOZ_CFX_KOD">
+            <div>
+              <h2>Stav serveru</h2>
+              <div class="server-status-info">
+                <p id="server-state">Načítání stavu...</p>
+                <p id="server-players">Hráči: -- / --</p>
+              </div>
+            </div>
+            
+            <div class="server-actions">
+              <a href="#" id="quick-connect" class="btn-retro">Quick Connect</a>
+              <button onclick="copyCfxIp()" class="btn-retro">Kopírovat IP</button>
+            </div>
+          </div>
+
+          <!-- Vyšší okno: Novinky / Devlog (načítá se z news.js) -->
+          <div class="box box-news">
+            <h2>Novinky / Devlog</h2>
+            <div id="news-container">
+              <p>Načítání novinek...</p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Pravý sloupec (~70%): Větší fotogalerie -->
+        <div class="box box-gallery">
+          <h2>Fotogalerie</h2>
+          <p>Zde budou zobrazeny fotky ze hry a komunitní momenty.</p>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- SEKCE: Pravidla a další -->
+    <div id="rules-community" class="page-section"><div class="box"><h2>Komunitní pravidla</h2><p>Zde budou sepsána pravidla chování komunity...</p></div></div>
+    <div id="rules-rp" class="page-section"><div class="box"><h2>Roleplay pravidla</h2><p>Zde budou pravidla pro správný roleplay...</p></div></div>
+    <div id="rules-illegal" class="page-section"><div class="box"><h2>Ilegální pravidla</h2><p>Zde budou pravidla pro ilegální frakce a akce...</p></div></div>
+    <div id="faq" class="page-section"><div class="box"><h2>FAQ</h2><p>Často kladené otázky...</p></div></div>
+    <div id="support" class="page-section"><div class="box"><h2>Support</h2><p>Informace o tom, jak kontaktovat A-tým...</p></div></div>
+
+  </main>
+
+  <!-- Skripty -->
+  <script src="news.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
