@@ -1,6 +1,6 @@
 :root {
-  --bg-color: #080711; /* Ještě o něco tmavší pro hlubší kontrast */
-  --card-bg: rgba(17, 21, 38, 0.85); /* Lehce průhledné okénko pro vyniknutí bluru */
+  --bg-color: #080711;
+  --card-bg: rgba(17, 21, 38, 0.85);
   --retro-blue: #3bc8db;
   --retro-pink: #ff2a85;
   --retro-purple: #8b2fc9;
@@ -24,7 +24,7 @@ body {
   overflow-x: hidden;
 }
 
-/* Pozadí plné rozmazaných neonových přechodů (růžová, fialová, modrá) */
+/* Pozadí plné rozmazaných neonových přechodů */
 body::before {
   content: '';
   position: fixed;
@@ -38,23 +38,30 @@ body::before {
     radial-gradient(circle at 15% 20%, rgba(255, 42, 133, 0.15) 0%, transparent 40%),
     radial-gradient(circle at 85% 80%, rgba(59, 200, 219, 0.12) 0%, transparent 40%),
     radial-gradient(circle at 50% 50%, rgba(139, 47, 201, 0.12) 0%, transparent 50%);
-  filter: blur(60px); /* Silný blur pro plynulý barevný přechod */
+  filter: blur(60px);
 }
 
-/* --- ANIMACE PROLÍNÁNÍ (Fade-in) --- */
-@keyframes fadeIn {
+/* --- PLYNULÉ PROLÍNÁNÍ STRÁNEK --- */
+.page-section {
+  display: none;
+}
+
+.page-section.active {
+  display: block;
+  /* Změnil jsem čas z 0.35s na 0.6s, aby to bylo pomalejší a plynulejší */
+  animation: fadeInDown 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes fadeInDown {
   from {
     opacity: 0;
-    transform: translateY(15px);
+    /* Začne o 25 pixelů výše a sjede dolů */
+    transform: translateY(-25px);
   }
   to {
     opacity: 1;
     transform: translateY(0);
   }
-}
-
-.page-section.active {
-  animation: fadeIn 0.4s ease-in-out forwards;
 }
 
 /* --- HORNÍ MENU (Fixní, úzké) --- */
@@ -68,7 +75,7 @@ header {
   justify-content: space-between;
   align-items: center;
   background-color: rgba(8, 7, 17, 0.85);
-  backdrop-filter: blur(12px); /* Blur efekt na headeru */
+  backdrop-filter: blur(12px);
   padding: 0 40px;
   border-bottom: 2px solid var(--retro-pink);
   box-shadow: 0 4px 20px rgba(139, 47, 201, 0.2);
@@ -102,6 +109,7 @@ nav {
   gap: 20px;
   align-items: center;
   margin-left: auto;
+  z-index: 2100;
 }
 
 nav a, .dropbtn {
@@ -123,7 +131,6 @@ nav a:hover, .dropbtn:hover {
   text-shadow: 0 0 6px rgba(255, 42, 133, 0.4);
 }
 
-/* Podsvícení aktivního tlačítka */
 nav a.active, .nav-btn.active {
   color: #fff;
   background-color: rgba(139, 47, 201, 0.3);
@@ -174,7 +181,7 @@ main {
 
 .box {
   background-color: var(--card-bg);
-  backdrop-filter: blur(8px); /* Jemný blur uvnitř samotných boxů */
+  backdrop-filter: blur(8px);
   border: 1px solid rgba(59, 200, 219, 0.3);
   border-radius: 8px;
   padding: 20px;
@@ -182,7 +189,6 @@ main {
   transition: all 0.3s ease-in-out;
 }
 
-/* Po najetí myší se okénko rozsvítí do svítivě růžovo-fialova */
 .box:hover {
   background-color: rgba(24, 21, 46, 0.9);
   border-color: var(--retro-pink);
@@ -263,12 +269,4 @@ main {
   border-color: var(--retro-pink);
   color: #fff;
   box-shadow: 0 0 12px rgba(255, 42, 133, 0.6);
-}
-
-.page-section {
-  display: none;
-}
-
-.page-section.active {
-  display: block;
 }
