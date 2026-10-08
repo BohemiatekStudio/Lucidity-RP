@@ -1,0 +1,125 @@
+{
+  "title": "Nelegální pravidla",
+  "sections": [
+    {
+      "category": "OKRÁDÁNÍ HRÁČŮ",
+      "text": "Zloděj vás může okrádat o vše, co máte u sebe, kromě:",
+      "items": [
+        "Mobilního telefonu",
+        "Klíčů od interiéru"
+      ],
+      "footer": "Je možné během únosu hráči sebrat telefon a získat z něj informace, poté se musí ale hráči vrátit. Lze si zažádat ticketem o možnost sebrání telefonu s pádným RP důvodem. Je zakázáno chtít po člověku, kterého okrádáte, peníze z banky či přepis vozidla. Krádeže PD, EMS, FD a vládních vozidel jsou zakázány. Pro výjimečnou RP situaci je možnost o krádež těchto vozidel zažádat u AT před akcí skrze ticket/report. Vykrádání obydlených jednotek je povoleno pouze v případě, že vlastník neprojeví odpovídající snahu o jejich zabezpečení, tedy nezamčením dveří."
+    },
+    {
+      "category": "PRAVIDLA ÚNOSU",
+      "items": [
+        "Maximální doba únosu jiné postavy jsou 2 hodiny reálného času.",
+        "V případě potřeby prodloužení doby únosu je možná domluva v LOOC.",
+        "Po dobu držení musíte dbát na to, aby váš rukojmí měl dostatek vody a jídla. Pokud tyto podmínky nebudou dodrženy, bude to bráno jako KOS.",
+        "Unesená osoba nesmí být držena v interiéru, do kterého je přístup pouze skrze teleport.",
+        "Jste povinni během vykonávání únosu napsat /911 s popisem vozidel, osob a směrem jízdy."
+      ]
+    },
+    {
+      "category": "DRŽENÍ V CPZ",
+      "items": [
+        "Hráč nesmí být držen v CPZ déle než 48 hodin reálného času, pokud hráči ze strany PD není zajištěna žádná RP interakce.",
+        "Do této doby se nepočítá čas, pokud hráč/i čeká/jí na vyjádření vyšší instance nebo čas strávený čekáním na právníka.",
+        "Po vypršení limitu musí být hráč/i propuštěn/i z cely.",
+        "Útěk z vězení není možný, leda by se jednalo o předem schválenou akci domluvenou s AT."
+      ]
+    },
+    {
+      "category": "PVP PRAVIDLA",
+      "text": "Je zakázáno zneužívání animací při přestřelkách (např. /e prone, /e passout, /e sleep atd.). Je zakázáno střílet či bránit se střelbě pomocí otevření kapoty nebo kufru. Je zakázáno během jakékoliv PVP situace nebo řízení auta používat a spamovat nabindované commandy typu /e prone, /e passout, /e dead atp. Je zakázaný návrat do již ukončené střelby viz. pravidla NVL / Passive RP – i Combat Comeback. Taktéž je zakázáno kolem místa střelby se pohybovat, jezdit apod.",
+      "items": [
+        "V případě záchrany člena frakce, ale akce musí proběhnout plánovaně při jedné vlně, nikoliv postupně.",
+        "Záchranná akce může proběhnout maximálně jednou, aby se předešlo opakovaným velkým přestřelkám. Musíte mít přesné informace o lokaci člena frakce."
+      ],
+      "footer": "Je zakázáno používat mód nebo vizuál, který zvýhodňuje hráče v RP."
+    },
+    {
+      "category": "Pointless Shooting",
+      "text": "Je zakázáno vyvolávat střelbu bez pádného RP důvodu/interakce. Za pádnou interakci se nepovažuje traffic stop, i přes to, že u sebe máte dlouhou/nelegální zbraň/drogy. Důvod začíná být relevantní až při prohledání vozidla nebo osoby, doporučujeme volit jiné způsoby (např. útěk, poté střelba)."
+    },
+    {
+      "category": "KOS │ KILL ON SIGHT",
+      "text": "Zabití na první pohled bez předešlé interakce (RP)."
+    },
+    {
+      "category": "VDM │ VEHICLE DEAD MATCH",
+      "text": "Úmyslné bourání do aut/budov atd. bez pádného RP důvodu. Auto lze použít jako zbraň proti hráči pouze v krajních případech, kdy už nezbývá žádná jiná možnost."
+    },
+    {
+      "category": "RDM │ RANDOM DEAD MATCH",
+      "text": "Náhodné zabíjení hráčů/NPC bez pádného RP důvodu."
+    },
+    {
+      "category": "COP-BAITING",
+      "text": "Je zakázaná cílená provokace státních složek. Měli by jste se státních složek obávat viz. pravidlo FEAR RP."
+    },
+    {
+      "category": "Ninja jacking",
+      "text": "Je zakázáno bezdůvodně a bez RP krást místní vozidla jen za účelem dojetí z A do B. Je dovoleno, používat místní vozidla, pro delší používání nebo za nejakým účelem."
+    },
+    {
+      "category": "WEATHER EVADING",
+      "text": "Je zakázáno unikání státním složkám plaváním (Např. Skočíte do vody a začnete plavat co nejdál od břehu, či na vodním skútru na otevřený oceán.). Nevztahuje se na rybníky, jezera, řeky..."
+    },
+    {
+      "category": "NELEGÁLNÍ FRAKCE",
+      "items": [
+        "Každá frakce má právo na získání frakčního sídla. O frakční sídlo se žádá ve frakčním ticketu.",
+        "Frakce má povinnost založení frakčního Discordu.",
+        "Na každém frakčním Discordu musí být přítomni minimálně dva členové AT s rolí full administrátora již od prvního dne RP frakce.",
+        "Za frakční Discord se považuje Discord frakce, kde jsou uvedeny IC informace a je uvedeno, jakou IC formou se zaznamenávají (cloud, kniha, web, tablet apod.).",
+        "Pokud jsou informace chráněné, musí být uvedeno, zda je vyžadováno IC přihlášení, heslo nebo fyzické umístění.",
+        "Na frakčním Discordu musí být jasně oddělena IC a OOC část.",
+        "Minimální počet lidí pro založení nelegální frakce jsou minimálně 3 záleží na druhu frakce a ticketu.",
+        "Maximální počty lidí v nelegálních frakci: Kartel (23), Mafie (20), Gangy (18), Ostatní (15).",
+        "Frakce si může ve výjimečných případech zažádat o navýšení slotů.",
+        "Pokud hrajete frakci založenou na reálné předloze, je přísně zakázáno odkazovat na události z reálného světa.",
+        "Boss frakce má automaticky schválené CK na své členy a může ho kdykoliv udělit.",
+        "Vstupem do nelegální frakce hráč automaticky schvaluje CK na svou postavu.",
+        "Pokud boss frakce dostane CK, musí informovat AT. Frakci přebírá osoba pod ním. Pokud se tak nestane, frakce může být automaticky odebrána.",
+        "Po ukončení nelegální frakce budou postavy této frakce smazány (CK), pokud AT nerozhodne jinak.",
+        "Je zakázáno mít lore vazby na jiné frakce.",
+        "Je zakázáno přecházet z jedné nelegální frakce do druhé. Výjimka může být udělena pouze prostřednictvím ticketu na nelegálním Discordu.",
+        "Pokud frakce chytí hráče na svém frakčním sídle, může mu udělit situační CK bez schválení. Situační CK může být uděleno pouze za přítomnosti bosse frakce. Výjimku tvoří státní složky."
+      ]
+    },
+    {
+      "category": "STRIKE SYSTÉM",
+      "items": [
+        "Při porušení pravidel může AT udělit frakci strike.",
+        "Strike vyprší po 30 dnech.",
+        "Pokud frakce obdrží třetí strike, může být odebrána frakční výhoda nebo celá frakce.",
+        "Příklad: při RP akci dojde k porušení pravidel minimálně pěti hráči – frakce obdrží strike za hromadné porušení pravidel."
+      ]
+    },
+    {
+      "category": "SPOJOVÁNÍ NELEGÁLNÍCH FRAKCÍ",
+      "items": [
+        "Je zakázáno spojování nelegálních frakcí za účelem zničení jiné frakce.",
+        "Spojení frakcí pro konkrétní akci je možné pouze s pádným RP důvodem a po schválení v ticketu.",
+        "Spojenectví za účelem obchodu nebo výměny informací je povolené."
+      ]
+    },
+    {
+      "category": "VÁLKA NELEGÁLNÍCH FRAKCÍ / RAID",
+      "items": [
+        "Válka frakcí vzniká za účelem zničení jiné frakce a musí být schválena prostřednictvím ticketu.",
+        "Raid může provést pouze frakce, která má schválený ticket na nelegálním Discordu.",
+        "U raidu musí být přítomen minimálně jeden člen AT pro spect (o spect lze požádat v ticketu nebo reportu).",
+        "Raid musí být proveden do 48 hodin od schválení.",
+        "Vedení frakce musí mít jasný RP důvod a cíl raidu (např. získání informací nebo únos členů).",
+        "Raid může být proveden na frakční sídlo i na podnik.",
+        "Vstupem na nelegální sídlo hráč automaticky schvaluje CK."
+      ]
+    },
+    {
+      "category": "OSTATNÍ",
+      "text": "Mezi ostatní se řadí originální nelegální frakce jako jsou: Motorkářské kluby, Hooligans, Vidláci, Bezdomovci, aj... Nemusí ihned působit jako nelegální frakce, volně mohou spolupracovat bez ticketu s ostatními nelegálními skupinami ve svůj prospěch. Podle typu frakce a jejich pravidel můžete opustit frakci bez CK, výjimkou je složení přísahy."
+    }
+  ]
+}

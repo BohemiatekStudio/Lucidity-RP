@@ -1,0 +1,183 @@
+{
+  "title": "Roleplay pravidla",
+  "sections": [
+    {
+      "category": "RP │ ROLEPLAY",
+      "text": "Roleplay je hraní postavy s fiktivním příběhem (lorem). Kdy se snažíme co nejvíce vžít do role a zůstat v charakteru, neboli do jisté míry simulujeme reálný život."
+    },
+    {
+      "category": "OOC │ OUT OF CHARACTER",
+      "text": "Jednání OOC (Out Of Character) znamená vystoupení z herní role, tedy vše mimo vaši herní postavu — čili jako hráč, nikoli jako vaše postava."
+    },
+    {
+      "category": "IC │ IN CHARACTER",
+      "text": "Jednání IC, neboli vše v rámci RP. Výměna informací mezi postavami, v rámci RP."
+    },
+    {
+      "category": "/ME",
+      "text": "Nahrazuje animace, které se nedají vyjádřit prostřednictvím herní mechaniky. Do commandů a /me je zakázáno psát své myšlenky a pocity.",
+      "items": [
+        "„/me vytahuje z kapsy doklady a podává je“",
+        "„/me otevírá kufr auta a vytahuje kufr“",
+        "„/me přátelsky mu poklepává po rameni“"
+      ]
+    },
+    {
+      "category": "/DO",
+      "text": "Slouží k popisu vykonání činnosti s očekáváním reakce nějakého hráče.",
+      "items": [
+        "„/me prohledává sklad“ „/do Co našel?“",
+        "odpověď druhého hráče … „/do našel sekeru, pistol“",
+        "v /do je přísně zakázáno lhát, psát pocity/myšlenky nebo psát /do za někoho jiného"
+      ]
+    },
+    {
+      "category": "/TRY",
+      "text": "Náhodné vygenerování ANO / NE. Slouží k rozvinutí RP situace nikoliv k zvýhodnění hráče.",
+      "items": [
+        "Zakázáno používat při rozhodování zranění postav, pokud není přítomno žádné EMS.",
+        "Zakázáno používat v rámci Passive RP."
+      ]
+    },
+    {
+      "category": "MIXING",
+      "text": "Používání OOC informací v IC. Za mixing se považují následující případy:",
+      "items": [
+        "„volám světlušku“ – píšu report",
+        "„koukni na lísteček“ – podívej se na OOC chat",
+        "„jdu do plačkárny“ – jdu do čekárny",
+        "Různé nadávky a oslovení v rámci interakce s hráči absolutně vybočující z loru postavy, frakce či skupiny."
+      ]
+    },
+    {
+      "category": "METAGAMING",
+      "text": "Využití informací, které se dozvíte OOC ve hře.",
+      "items": [
+        "Příklady: stream sniping, získávání informací z OOC kanálů apod.",
+        "Nabádání k metagamingu je zakázáno."
+      ]
+    },
+    {
+      "category": "LORE POSTAVY",
+      "text": "Každá postava v RP představuje smyšlenou osobu, která má na začátku pevně daný lore a vyvíjí na základě toho, co se jí v životě (v RP) stane. Je třeba klást důraz na držení se loru, postavení a seriozitu postav. Využívání animací musí být adekvátní k loru postavy."
+    },
+    {
+      "category": "NON-RP INJURIES",
+      "text": "Při každé situaci kdy se vaše postava IC zraní je potřeba zaRPit adekvátní zranění.",
+      "items": [
+        "Lehká zranění jako odřeniny, škrábance či mělké řezné rány si je schopen hráč ošetřit sám.",
+        "Zranění vzniklá na základě autonehody, střelná zranění a hluboké řezné rány je třeba nechat ošetřit lékařem.",
+        "V případě nepřítomnosti (hráčů) doktorů na serveru je nutné si po respawnu na EMS zaRPit místního doktora.",
+        "Hráč je povinen v případě bodného nebo střelného zranění podstoupit vyšetření v nemocnici a následné povolání státních složek přes příkaz /911 (a připoutání k lůžku na EMS).",
+        "!!! I přesto, že se hráč nedostal do PK, jste povinni adekvátně RPit zranění !!!"
+      ]
+    },
+    {
+      "category": "PK │ PLAYER KILL",
+      "text": "Vaše postava utrpěla zranění a musí se nechat ošetřit kompetentní osobou (Např. EMS, v RP kvalifikovaným hráčem).",
+      "items": [
+        "Postava si po PK vše pamatuje a pokračuje v hraní (nikoliv to, co se děje během PK, ale vše před udělením PK).",
+        "RP ztráty paměti je možné v případě, že tím nedojde o snahu vyhýbat se RP situaci (vyhýbání se obvinění, zatčení apod.), hráč by měl vždy mít pádný RP důvod.",
+        "Pokud chcete, aby si druhá strana nic nepamatovala, musíte to tak taktéž zaerpit (např. rána do hlavy tupým předmětem, alkohol, zdrogování...).",
+        "Začít vzpomínat si můžete až po 24 hodinách reálného času (např. pomalu si vybavovat: barvy aut, obrysy tváře, místa a další.).",
+        "V PK je zakázáno spamovat vysílačku a panicbutton.",
+        "Mluvení v PK je možné, záleží však na povaze zranění.",
+        "Hráč v PK je povinen po zaslání G signálu vyčkat na příjezd EMS."
+      ]
+    },
+    {
+      "category": "REVENGE KILL",
+      "text": "Je zakázáno \"mstít\" se druhé osobně po dobu 24 hodin (reálného času) od obdržení PK. Hráč se považuje za zraněného/neschopného se mstít. Pokud bude však vystaven situaci z opačné strany, má povoleno se bránit. Pokud je postava schopna se po zotavení mstít, vždy by této situaci mělo předcházet RP. Pomsta nikdy nesmí proběhnout jako KOS."
+    },
+    {
+      "category": "CK │ CHARAKTER KILL",
+      "text": "Definitivní smrt postavy.",
+      "items": [
+        "Každé CK musí být předem schváleno AT (výjimkou je situační CK) pomocí ticketu na našem discordu.",
+        "Po provedení CK musí být oznámeno v LOOC: „CK – jméno postavy - OOC nick daného hráče”, aby CK bylo platné.",
+        "Po provedení CK je nutné nahlásit do příslušného ticketu místo činu, způsob zabití/příčina smrti, zda se s tělem nějak manipulovalo.",
+        "Po CK je zakázán návrat do stejné frakce, se kterou spolupracovala původní postava hráče, po dobu 7 dní. Běžná interakce s frakcí je povolena, nikoliv však cokoliv ilegálního (ani jako externí spolupracovník!).",
+        "Je zakázáno, aby se hráč po CK vrátil s novou postavou, která má jakoukoliv vazbu na jeho předešlou postavu (příbuzenství, známost). Jedná se o nepovolený metagaming, avšak AT může v některých případech udělit výjimku."
+      ]
+    },
+    {
+      "category": "Druhy CK",
+      "items": [
+        "CK: Žádost o CK pro jinou postavu je třeba vždy podložit dostatečným RP důvodem a dlouhodobým RP. Poškozený hráč se proti CK může odvolat v případě že má pocit že mu CK bylo uděleno neprávem. Pokud chcete udělit CK na člena AT musíte napsat do soukromých zpráv nezávislým členům AT.",
+        "SelfCK: V případě, že chcete CK udělit vlastní postavě, musíte si nechat schválit SelfCK od AT.",
+        "SituačníCK: Lze udělit pouze v případě že k tomu má hráč dostatečný RP důvod (např. když jste svědkem vraždy osoby vám blízké atd.). Pro udělení situačního CK je nutné oznámit akci reportem a zároveň požádat o spectate celé situace. Po udělení CK si vypsat ticket a vyplnit všechny náležitosti a podrobně uvést všechny důvody pro CK. (V případě nedostatečného důvodu může být CK skipnuto..).",
+        "FrakčníCK: Uděluje boss frakce členům své frakce. Není třeba schválení ticketem.",
+        "JailCK: Trest odnětí svobody na doživotí je považováno za CK postavy."
+      ]
+    },
+    {
+      "category": "Gross RP",
+      "text": "Nechutný či drsný styl RP v podobě slovní, písemné nebo za použití animace.",
+      "items": [
+        "Pokud chcete RPit GrossRP, musíte se zeptat v OOC chatu na povolení od všech přítomných hráčů. Pokud tak neučiníte, je GrossRP přísně zakázáno.",
+        "GrossRP se může kdykoliv zrušit nebo zmírnit v OOC chatu.",
+        "Je zakázáno hráče mučit způsobem, který by na nich zanechal trvale viditelné následky, které se nedají znázornit mechanikou hry (např. uřezávat končetiny, vyřezávat nápisy/ornamenty atd).",
+        "Nikdy nesmí být neschválení Gross RP podmětem k vyhýbání se RP. Pokud se jedná o „mučení“, nesmí oběť nějak pozastavovat hru ani v případě, že neschválíte Gross RP. To neznamená, že RP nebude pokračovat.",
+        "Pokud máte pocit, že je jejich RP neoprávněné, můžete si podat po doerpení situace ticket.",
+        "Výjimkou je znásilnění – pokud je zamítnuto, zůstává zamítnutým a nelze v něm pokračovat žádnou formou."
+      ]
+    },
+    {
+      "category": "FEAR",
+      "text": "Znázornění strachu z dané situace. Hráči jsou povinni brát v potaz, že se jejich postava bojí o svůj život (vztahuje se i na situace, kdy vystavíte jiného blízkého člověka nebezpečí ohrožení na životě, např. když na osobu míří 2 lidé a chtějí ho okrást).",
+      "items": [
+        "JailFear: Strach z toho, že se dostanete do vězení.",
+        "GunFear: Strach ze střelných zbraní.",
+        "AnimalFear: Strach ze zvířat, které vás mohou pokousat či hůř (např. neznámý pes na ulici).",
+        "JobFear: Strach ze ztráty práce.",
+        "CopFear: Hráči by měli mít respekt ze státních složek jako jsou LSPD, LSSD apod."
+      ]
+    },
+    {
+      "category": "NVL │ NOT VALUING YOUR LIFE",
+      "text": "Nevážení si svého života. Hráči jsou povinni bát se o svůj život i o životy svých blízkých."
+    },
+    {
+      "category": "POWERGAMING",
+      "text": "Nereálné úkony, které nejsou v reálném světě možné (např. „/me bere auto do rukou a hází ho před sebe“). Počítá se i zneužívání animací (např. /e clown5 a další)."
+    },
+    {
+      "category": "FAIL RP / TRASH RP",
+      "items": [
+        "Je zakázáno na serveru jakkoliv trollit nebo kazit RP (např. bezdůvodné napadání a nadávání hráčům).",
+        "Je zakázáno používat známá jména postav z her, filmů nebo jména známých osobností.",
+        "Je zakázáno RPit nelegální PD, FD a EMS (korupce) bez schválení AT.",
+        "Při nošení hráče pomocí příkazu /carry a /donaruci je povinností hráče danou situaci RPit i pomocí /me a /do. Samostatné použití příkazu je bráno jako Fail RP.",
+        "Použití motorek, offroad bugin a lodí pro nelegální činnosti (banky, klenotnictví, obchody, atp.) je bráno jako Fail RP. Vyjímka: použití pro nelegální činnosti, které se již od počátku odehrávají v offroadu, použití jako sekundární vozidlo v případě předpřípravy na místě dostatečně vzdáleném od místa provedení neleg. činnosti.",
+        "Je zakázáno cíleně kempit a okrádat jiné hráče na místech unikátních skriptů (např. u NPC jobů atd.).",
+        "!!! Zákaz zneužívání a bugování animací ku vlastnímu prospěchu !!!"
+      ]
+    },
+    {
+      "category": "POZNÁVÁNÍ HRÁČŮ",
+      "text": "Je zakázáno poznávání hráčů dle hlasu, oblečení či vzhledu, pokud jste s daným hráčem neměli dostatečnou interakci. Jako dostatečná interakce je považován vztah postav (rodina, milenec, partner, kolega, apod.) nebo dlouhodobé RP mezi postavami."
+    },
+    {
+      "category": "PRAVIDLO INVENTÁŘE",
+      "text": "Vše co máte v inventáři postavy, máte u sebe. V případě prohledávání jiným hráčem není nutné prohledávání skrz inventář, je možné využít příkazy /me a /do. Při prohledávání jiným hráčem je možné se zeptat, kde všude vás osoba prohledává pomocí /do. Hráč by u sebe měl vždy nosit reálné množství např. peněz, jídla atd., které je schopen unést."
+    },
+    {
+      "category": "PUSSY HUNTING",
+      "text": "Je zakázáno cílené \"nahánění\" žen v RP (vynucená interakce, pravidelné únosy...)."
+    },
+    {
+      "category": "FRAKCE",
+      "text": "Seskupení hráčů se stejným herním cílem (např. firma, klan, klub, provozovna služeb, skupina provozující nelegální činnosti apod.). O frakci si lze zažádat formou ticketu, který podává potencionální vůdce frakce.",
+      "items": [
+        "Potřebné informace v ticketu:",
+        "1. Název frakce",
+        "2. Typ frakce (Legální/Neutrální/Nelegální)",
+        "3. Věk žadatele",
+        "4. Počet lidí do začátku",
+        "5. Lore frakce (historie, popis, zaměření, hierarchie, cíl)",
+        "6. Lore postavy žadatele",
+        "7. Seznam členů do začátku"
+      ]
+    }
+  ]
+}

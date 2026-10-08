@@ -8,7 +8,7 @@
   --text-color: #e2e2e8;
 }
 
-* {
+*, *::before, *::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -24,7 +24,6 @@ body {
   overflow-x: hidden;
 }
 
-/* Pozadí plné rozmazaných neonových přechodů */
 body::before {
   content: '';
   position: fixed;
@@ -41,22 +40,19 @@ body::before {
   filter: blur(60px);
 }
 
-/* --- PLYNULÉ PROLÍNÁNÍ STRÁNEK --- */
 .page-section {
   display: none;
 }
 
 .page-section.active {
   display: block;
-  /* Změnil jsem čas z 0.35s na 0.6s, aby to bylo pomalejší a plynulejší */
-  animation: fadeInDown 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  animation: fadeIn 0.35s ease-in-out forwards;
 }
 
-@keyframes fadeInDown {
+@keyframes fadeIn {
   from {
     opacity: 0;
-    /* Začne o 25 pixelů výše a sjede dolů */
-    transform: translateY(-25px);
+    transform: translateY(8px);
   }
   to {
     opacity: 1;
@@ -64,7 +60,6 @@ body::before {
   }
 }
 
-/* --- HORNÍ MENU (Fixní, úzké) --- */
 header {
   position: fixed;
   top: 0;
@@ -83,7 +78,6 @@ header {
   overflow: visible;
 }
 
-/* Logo přesahující z headeru dolů */
 .logo-overflow {
   position: absolute;
   top: 8px;
@@ -103,7 +97,6 @@ header {
   transform: scale(1.03);
 }
 
-/* Navigace na pravé straně */
 nav {
   display: flex;
   gap: 20px;
@@ -138,7 +131,6 @@ nav a.active, .nav-btn.active {
   box-shadow: 0 0 12px rgba(255, 42, 133, 0.4);
 }
 
-/* Dropdown menu */
 .dropdown {
   position: relative;
 }
@@ -172,7 +164,6 @@ nav a.active, .nav-btn.active {
   display: block;
 }
 
-/* --- HLAVNÍ PROSTOR A OKÉNKA --- */
 main {
   max-width: 1100px;
   margin: 30px auto;
@@ -212,7 +203,6 @@ main {
   margin-bottom: 20px;
 }
 
-/* Šířky sloupců: Levý ~30%, Pravý ~70% */
 .grid-layout {
   display: grid;
   grid-template-columns: 3fr 7fr;
@@ -269,4 +259,23 @@ main {
   border-color: var(--retro-pink);
   color: #fff;
   box-shadow: 0 0 12px rgba(255, 42, 133, 0.6);
+}
+
+.news-item {
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.news-date {
+  font-size: 0.8rem;
+  color: var(--retro-blue);
+  margin-bottom: 4px;
+}
+
+.news-title {
+  font-size: 1rem;
+  color: #fff;
+  font-weight: 600;
+  margin-bottom: 6px;
 }

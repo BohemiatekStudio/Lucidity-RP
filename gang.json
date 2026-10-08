@@ -1,0 +1,70 @@
+{
+  "title": "Pravidla pro gangy",
+  "sections": [
+    {
+      "category": "GANGY – ZÁKLADNÍ PRINCIPY",
+      "items": [
+        "Fear RP – i když v hoodu neplatí „passive“, tvá postava je pořád jen člověk. Když na tebe někdo míří nebo přijede auto plné ozbrojených lidí, hraješ strach, kryješ se, neutíkáš jak terminátor.",
+        "Střílení není první volba – cizí člověk v hoodu ≠ automaticky mrtvej. Gang RP má být o příběhu, konfliktu a rivalitě, nejen o gunplay.",
+        "Postava se do gangu rodí – nejsi náborový člen. Už od začátku RPíš, že jsi vyrůstal v hoodu a gang je tvoje rodina.",
+        "Vztahy a minulost – všichni členové gangu se znají dlouho. Nepůsobí to pak jako parta cizinců, ale jako skutečná komunita.",
+        "Časové limity – mezi většími akcemi (pull-up, drive-by…) drž minimálně 20 minut IRL, což zabraňuje sklouznutí do nonstop deathmatch stylu."
+      ]
+    },
+    {
+      "category": "TETOVÁNÍ A IDENTITA",
+      "text": "Každý gang má své specifické značky (např. „SYC“ – School Yard Crips). Tetování je vizuální signál – může tě prozradit. Proto při RP vždy popiš, jestli je viditelné pomocí příkazů jako `/do vidí tetování?` nebo `/do SYC na krku.`"
+    },
+    {
+      "category": "KONFLIKTY A ŘEŠENÍ",
+      "items": [
+        "Beef – začíná často slovně. Nadávky, provokace, dokazování, kdo má větší respekt.",
+        "Street fight – férovka mezi dvěma lidmi, ostatní tvoří kruh. Žádné spamování kliků – hraj reálně.",
+        "Gang beat up – hromadná bitka, používají se tupé zbraně (baseballka, boxer). Nikdo se tu nemá umřít, jen do bezvědomí."
+      ]
+    },
+    {
+      "category": "TYPY AKCÍ",
+      "items": [
+        "Pull-up – rychlý nájezd do enemy hoodu. Musí mít vážný důvod, proběhne předání message, postřelení/zabití pár lidí a ústup.",
+        "Assassin Pull-up – stejné jako pull-up, ale v neutrálních barvách. Message se nepředává na místě, ale na Instagramu/DC.",
+        "Drive-by – střílení z auta, bez vystupování. Vhodné pro rychlé „hit and run“.",
+        "Walk-up – více osobní forma akce. Přijdeš do hoodu nepřítele, chvíli konverzace → pak message a útok.",
+        "Drive-by na auto – pokud je cíl v autě, zpráva + střelba + rychlý odjezd.",
+        "Backfire – zakázané. Pokud na tebe přijede auto a začne střílet, nesmíš hned instantně opětovat palbu."
+      ]
+    },
+    {
+      "category": "OKRÁDÁNÍ (GANGY)",
+      "text": "Povolené jen v rámci pull-upu nebo akce. Nesmí být hlavní point RP („farmení lootů“). Zakázané únosy členů jiných gangů jen tak na ulici."
+    },
+    {
+      "category": "POHYB V DOWNTOWNU",
+      "text": "Gang je doma hlavně ve svém hoodu. Přirozené pohyby: barber shop, cloth shop, basketbal, skatepark, ježdění na kole, procházky s crew. Pointa je tvořit život hoodu, nejen čekat na fight."
+    },
+    {
+      "category": "REVENGE",
+      "text": "Pull-up → revenge → konec. Žádné revenge na revenge – musí to mít hranici."
+    },
+    {
+      "category": "AUTA (GANGY)",
+      "text": "Používejte auta, která dává smysl, tedy americké/japonské modely. Supercars a sportovní káry jsou mimo charakter. Lepší luxusní auto si můžeš pořídit až poté, co si ho IC vyděláš."
+    },
+    {
+      "category": "DRESS CODE",
+      "text": "Žádné „full barvy“ – působilo by to jako armáda. Menší detaily a doplňky (boty, čepice, mikina) jsou povolené. Styl má být reálný – street fashion, hood styl, ne cosplay."
+    },
+    {
+      "category": "HUDBA A KULTURA",
+      "text": "Rap a hip-hop sedí nejvíc, ale omezení není. Postava z hoodu nebude poslouchat mainstream pop. Hudba obohacuje RP – reprák na ulici, společné poslechy."
+    },
+    {
+      "category": "TAGOVÁNÍ A GRAFFITI",
+      "text": "Volnost v tagování. Ale nezapomínej na Passive RP. Používej k označování teritoria, posílání vzkazů nepřátelům. Graffiti je silný IC nástroj → buduje image gangu."
+    },
+    {
+      "category": "PODNIKY A FRAKCE",
+      "text": "Gangsteři nemůžou vlastnit legální podniky (obchody, benzínky, frakce). Život gangstera = ulice a nelegální aktivity, ne podnikání."
+    }
+  ]
+}

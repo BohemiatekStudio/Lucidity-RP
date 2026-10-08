@@ -1,0 +1,36 @@
+{
+  "title": "Komunitní pravidla",
+  "sections": [
+    {
+      "category": "1. Obecná pravidla",
+      "items": [
+        "Pro připojení na server je nutné udělat Whitelist (formulář a ústní pohovor).",
+        "Věkové omezení: 15 let, výjimka přes ticket systém.",
+        "Dodržujte pravidla komunity – neznalost pravidel neomlouvá.",
+        "Hráči musí mít stejný herní nick ve hře i na Discordu.",
+        "Každý zodpovídá za svůj účet. Propůjčení účtu jinému hráči je zakázáno."
+      ]
+    },
+    {
+      "category": "2. Programy třetích stran",
+      "text": "Používání cheatů, aimbotů, wallhacků, speedhacků, nebo modifikací textur a herních efektů je zakázáno."
+    },
+    {
+      "category": "3. Reklama a spam",
+      "text": "Zakázáno propagovat jiné servery, sociální sítě či spamovat ve hře či na Discordu."
+    },
+    {
+      "category": "4. Trash Talk a komunikace",
+      "text": "Vyvolávání hádek OOC/LOOC, hodnocení RP ostatních hráčů je zakázáno. Pro problémy použijte report nebo ticket systém."
+    },
+    {
+      "category": "5. Komunikace s administrátory",
+      "items": [
+        "Zakázáno kontaktovat AT do soukromých zpráv bez svolení.",
+        "Ve hře používejte /report podle pokynů AT.",
+        "Administrativní záležitosti řešte přes ticket systém na Discordu.",
+        "Zakázáno nahrávat rozhovory s administrátory."
+      ]
+    }
+  ]
+}

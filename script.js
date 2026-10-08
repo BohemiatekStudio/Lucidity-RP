@@ -1,86 +1,41 @@
-// Přepínání stránek a správa podsvícení aktivního tlačítka v menu
+// Přepínání stránek
 function showSection(sectionId, element) {
   const sections = document.querySelectorAll('.page-section');
-  sections.forEach(sec => {
-    sec.classList.remove('active');
-    sec.style.animation = 'none'; // Reset animace
-  });
+  sections.forEach(sec => sec.classList.remove('active'));
   
-  const targetSection = document.getElementById(sectionId);
-  targetSection.style.animation = ''; // Obnovení animace
-  targetSection.classList.add('active');
+  const target = document.getElementById(sectionId);
+  if (target) target.classList.add('active');
 
-  const navButtons = document.querySelectorAll('nav > a, .dropbtn');
+  const navButtons = document.querySelectorAll('.nav-btn');
   navButtons.forEach(btn => btn.classList.remove('active'));
 
-  if (element) {
+  if (element && element.classList.contains('nav-btn')) {
     element.classList.add('active');
   }
 
-  document.getElementById('rules-dropdown').classList.remove('show');
+  // Zavřít dropdown, pokud je otevřený
+  const dropdown = document.getElementById('rules-dropdown');
+  if (dropdown) dropdown.classList.remove('show');
 }
 
-// Přepnutí na podsekci pravidel a rozsvícení hlavního tlačítka "Pravidla"
+// Přepínání podsekcí pravidel z dropdownu
 function showRuleSection(sectionId, event) {
-  event.stopPropagation();
-  
-  const sections = document.querySelectorAll('.page-section');
-  sections.forEach(sec => {
-    sec.classList.remove('active');
-    sec.style.animation = 'none';
-  });
-  
-  const targetSection = document.getElementById(sectionId);
-  targetSection.style.animation = '';
-  targetSection.classList.add('active');
-
-  const navButtons = document.querySelectorAll('nav > a, .dropbtn');
-  navButtons.forEach(btn => btn.classList.remove('active'));
-
-  const rulesBtn = document.querySelector('.dropbtn');
-  if (rulesBtn) {
-    rulesBtn.classList.add('active');
-  }
-
-  document.getElementById('rules-dropdown').classList.remove('show');
+  event.preventDefault();
+  showSection(sectionId);
 }
 
-// Otevírání/zavírání dropdown menu
+// Ovládání rozevíracího menu
 function toggleDropdown(event) {
   event.stopPropagation();
   const dropdown = document.getElementById('rules-dropdown');
-  dropdown.classList.toggle('show');
+  if (dropdown) dropdown.classList.toggle('show');
 }
 
-// Zavření dropdownu při kliknutí mimo
+// Zavření dropdownu při kliknutí kamkoliv jinam
 window.addEventListener('click', () => {
   const dropdown = document.getElementById('rules-dropdown');
-  if (dropdown) {
-    dropdown.classList.remove('show');
-  }
+  if (dropdown) dropdown.classList.remove('show');
 });
-
-// Načtení novinek ze souboru news.js do okna na webu
-function loadNews() {
-  const newsContainer = document.getElementById('news-container');
-  if (!newsContainer || typeof serverNews === 'undefined') return;
-
-  newsContainer.innerHTML = '';
-
-  serverNews.forEach(item => {
-    const newsItem = document.createElement('div');
-    newsItem.style.marginBottom = '15px';
-    newsItem.style.borderBottom = '1px solid #2a2f4c';
-    newsItem.style.paddingBottom = '12px';
-
-    newsItem.innerHTML = `
-      <span style="font-size: 0.75rem; color: var(--retro-blue);">${item.date}</span>
-      <h3 style="font-size: 1rem; color: #fff; margin: 3px 0;">${item.title}</h3>
-      <p style="font-size: 0.85rem; color: #aaa; line-height: 1.4;">${item.text}</p>
-    `;
-    newsContainer.appendChild(newsItem);
-  });
-}
 
 // Načítání stavu serveru z Cfx.re API
 async function loadServerStatus() {
@@ -89,7 +44,8 @@ async function loadServerStatus() {
   
   const cfxCode = serverBox.getAttribute('data-cfx');
   if (!cfxCode || cfxCode === 'SEM_VLOZ_CFX_KOD') {
-    document.getElementById('server-state').innerText = 'Chybí CFX kód serveru';
+    const stateEl = document.getElementById('server-state');
+    if (stateEl) stateEl.innerText = 'Chybí CFX kód serveru';
     return;
   }
 
@@ -111,9 +67,10 @@ async function loadServerStatus() {
   }
 }
 
-// Kopírovating IP do schránky
+// Kopírování připojovacího kódu
 function copyCfxIp() {
   const serverBox = document.getElementById('server-box');
+  if (!serverBox) return;
   const cfxCode = serverBox.getAttribute('data-cfx');
   
   navigator.clipboard.writeText(`cfx.re/join/${cfxCode}`).then(() => {
@@ -124,6 +81,44 @@ function copyCfxIp() {
 // Spuštění po načtení stránky
 document.addEventListener('DOMContentLoaded', () => {
   loadServerStatus();
-  loadNews();
   setInterval(loadServerStatus, 60000);
+});
+// Načítání pravidel z JSON souborů
+async function loadRules(filename, containerId) {
+  const container = document.getElementById(containerId);
+  if (!container) return;
+
+  try {
+    const response = await fetch(filename);
+    if (!response.ok) throw new Error('Chyba při načítání pravidel');
+    
+    const data = await response.json();
+    
+    let htmlContent = `<h2>${data.title}</h2>`;
+    
+    data.sections.forEach(section => {
+      htmlContent += `<h3 style="color: var(--retro-blue); font-size: 1.05rem; margin-top: 15px; margin-bottom: 5px;">${section.category}</h3>`;
+      
+      if (section.text) {
+        htmlContent += `<p style="margin-bottom: 15px;">${section.text}</p>`;
+      } else if (section.items) {
+        htmlContent += `<ul style="color: #aaa; padding-left: 20px; font-size: 0.95rem; margin-bottom: 15px;">`;
+        section.items.forEach(item => {
+          htmlContent += `<li>${item}</li>`;
+        });
+        htmlContent += `</ul>`;
+      }
+    });
+
+    container.innerHTML = `<div class="box">${htmlContent}</div>`;
+  } catch (error) {
+    container.innerHTML = `<div class="box"><h2>Chyba</h2><p>Nepodařilo se načíst pravidla.</p></div>`;
+  }
+}
+
+// Spuštění načítání pravidel při startu
+document.addEventListener('DOMContentLoaded', () => {
+  loadRules('community.json', 'rules-community');
+  loadRules('rp.json', 'rules-rp');
+  loadRules('illegal.json', 'rules-illegal');
 });

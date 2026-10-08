@@ -4,37 +4,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lucidity</title>
-  
-  <!-- Favicona (upravte název podle toho, zda se jmenuje favicon.png nebo .favicon.png) -->
-  <link rel="icon" type="image/png" href="assets/favicon.png">
-
-  <!-- OpenGraph meta tagy pro sdílení (Discord, Facebook atd.) -->
-  <meta property="og:title" content="Lucidity Roleplay">
-  <meta property="og:description" content="Vítejte na komunitním roleplay serveru Lucidity. Sledujte náš web pro nejnovější informace a stav serveru.">
-  <meta property="og:image" content="https://bohemiatekstudio.github.io/Lucidity-RP/assets/logo.png">
-  <meta property="og:url" content="https://bohemiatekstudio.github.io/Lucidity-RP/">
-  <meta property="og:type" content="website">
-
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Lucidity Roleplay">
-  <meta name="twitter:description" content="Vítejte na komunitním roleplay serveru Lucidity.">
-  <meta name="twitter:image" content="https://bohemiatekstudio.github.io/Lucidity-RP/assets/logo.png">
-
   <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
 </head>
 <body>
 
-  <!-- HORNÍ MENU (Fixní nahoře) -->
+  <!-- HORNÍ MENU -->
   <header>
-    <!-- Logo vlevo, přesahující dolů pod čáru -->
     <div class="logo-overflow">
       <a href="#" onclick="showSection('home', this)">
         <img src="assets/logo.png" alt="Lucidity Logo" class="logo-img">
       </a>
     </div>
 
-    <!-- Tlačítka vpravo -->
     <nav>
       <a href="#" class="nav-btn active" onclick="showSection('home', this)">Domů</a>
       
@@ -59,19 +41,16 @@
     <!-- DOMOVSKÁ STRÁNKA -->
     <div id="home" class="page-section active">
       
-      <!-- Uvítací box přes celou šířku -->
       <div class="box welcome-full">
         <h2>Vítejte na Lucidity</h2>
         <p>Lucidity je komunitní roleplay server. Zde najdeš vše potřebné pro hraní a aktuality z dění.</p>
       </div>
 
-      <!-- MŘÍŽKA OKEN (30% vlevo, 70% vpravo) -->
       <div class="grid-layout">
         
-        <!-- Levý sloupec (~30%): Stav serveru + Novinky -->
         <div class="column-left">
           
-          <!-- Nižší okno: Stav serveru (Cfx.re API) - Zde nahraď SEM_VLOZ_CFX_KOD svým reálným kódem z cfx.re/join/KOD -->
+          <!-- Stav serveru (Zde si zadej svůj Cfx kód místo SEM_VLOZ_CFX_KOD) -->
           <div class="box box-server" id="server-box" data-cfx="SEM_VLOZ_CFX_KOD">
             <div>
               <h2>Stav serveru</h2>
@@ -87,7 +66,7 @@
             </div>
           </div>
 
-          <!-- Vyšší okno: Novinky / Devlog (načítá se z news.js) -->
+          <!-- Novinky -->
           <div class="box box-news">
             <h2>Novinky / Devlog</h2>
             <div id="news-container">
@@ -97,7 +76,6 @@
 
         </div>
 
-        <!-- Pravý sloupec (~70%): Větší fotogalerie -->
         <div class="box box-gallery">
           <h2>Fotogalerie</h2>
           <p>Zde budou zobrazeny fotky ze hry a komunitní momenty.</p>
@@ -106,7 +84,7 @@
       </div>
     </div>
 
-    <!-- SEKCE: Pravidla a další -->
+    <!-- SEKCE -->
     <div id="rules-community" class="page-section"><div class="box"><h2>Komunitní pravidla</h2><p>Zde budou sepsána pravidla chování komunity...</p></div></div>
     <div id="rules-rp" class="page-section"><div class="box"><h2>Roleplay pravidla</h2><p>Zde budou pravidla pro správný roleplay...</p></div></div>
     <div id="rules-illegal" class="page-section"><div class="box"><h2>Ilegální pravidla</h2><p>Zde budou pravidla pro ilegální frakce a akce...</p></div></div>
