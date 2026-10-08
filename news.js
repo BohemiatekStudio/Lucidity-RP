@@ -8,6 +8,16 @@ const serverNews = [
   {
     date: "5. 10. 2026",
     title: "Aktualizace vozového parku",
-    text: "Do garáží bylo přidáno několik nových klasických vozidel. Přijďte je vyzkoušet do města!"
+    text: "test!"
+  },
+  {
+    date: "5. 10. 2026",
+    title: "Spuštění nového webu!",
+    text: "test!"
+  },
+  {
+    date: "5. 10. 2026",
+    title: "Aktualizace vozového parku",
+    text: "test!"
   }
 ];
